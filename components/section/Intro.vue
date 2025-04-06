@@ -10,7 +10,7 @@
 				class="text-2xl 2xl:text-6xl text-center md:text-5xl text-green-600 font-indie-flower md:text-start w-full"
 			>
 				<strong>A Turma Sustentável</strong> <br />
-				Episódio: Educação, Campo e Tecnologia de Forma Interligada
+				Educação, Campo e Tecnologia de Forma Interligada
 			</h1>
 			<h6
 				class="text-green-800 md:text-lg text-md text-center md:text-start px-4 md:px-0 2xl:text-2xl"
