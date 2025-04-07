@@ -8,6 +8,13 @@ export default defineNuxtConfig({
 		{path: 'components/', prefix: 'Ui'},
 		{path: 'partials/', prefix: 'UiPartial'},
 	],
+	app: {
+		head: {
+			htmlAttrs: {
+				lang: 'pt-BR'
+			}
+		},
+	},
 	modules: [
 		'@nuxtjs/tailwindcss',
 		'@nuxtjs/supabase',
@@ -16,6 +23,7 @@ export default defineNuxtConfig({
 		'@vueuse/nuxt',
 		'@nuxtjs/google-fonts',
 		'nuxt-headlessui',
+		'@nuxt/image',
 	],
 	supabase: {
 		redirectOptions: {

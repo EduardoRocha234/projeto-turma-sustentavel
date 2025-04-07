@@ -45,7 +45,7 @@ export default defineEventHandler(async (event) => {
 
 		throw createError({
 			status: 500,
-			message: 'Erro ao fazer upload do arquivo',
+			message: 'Erro ao atualizar dados do aluno',
 		})
 	}
 })

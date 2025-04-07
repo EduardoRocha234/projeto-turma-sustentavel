@@ -1,7 +1,6 @@
 import {serverSupabaseClient, serverSupabaseUser} from '#supabase/server'
 import {SupabaseClient} from '@supabase/supabase-js'
 import {H3Error} from 'h3'
-import {IStudent} from '~/interfaces'
 
 export default defineEventHandler(async (event) => {
 	const {supabaseBucketName} = useRuntimeConfig(event)
@@ -28,7 +27,7 @@ export default defineEventHandler(async (event) => {
 
 		throw createError({
 			status: 500,
-			message: 'Erro ao fazer upload do arquivo',
+			message: 'Erro ao buscar dados',
 		})
 	}
 })
@@ -47,9 +46,8 @@ async function getStorageUsage(
 
 	const totalSize =
 		data?.reduce((sum, file) => sum + (file.metadata?.size || 0), 0) || 0
-	const totalSizeMB = (totalSize / 1024 / 1024)
-    const percentageUsed = ((totalSizeMB / 1024) * 100).toFixed(2)
-	// console.log(`Espaço utilizado: ${(totalSize / 1024 / 1024).toFixed(2)} MB`)
+	const totalSizeMB = totalSize / 1024 / 1024
+	const percentageUsed = ((totalSizeMB / 1024) * 100).toFixed(2)
 
 	return percentageUsed
 }

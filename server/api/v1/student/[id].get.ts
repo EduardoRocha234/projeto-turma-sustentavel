@@ -1,6 +1,6 @@
-import {serverSupabaseClient, serverSupabaseUser} from '#supabase/server'
-import {H3Error} from 'h3'
-import {IStudent} from '~/interfaces'
+import { serverSupabaseClient } from '#supabase/server'
+import { H3Error } from 'h3'
+import { IStudent } from '~/interfaces'
 
 export default defineEventHandler(async (event) => {
 	const id = getRouterParam(event, 'id')
@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
 
 		throw createError({
 			status: 500,
-			message: 'Erro ao fazer upload do arquivo',
+			message: 'Erro ao fazer ao buscar dados do aluno',
 		})
 	}
 })

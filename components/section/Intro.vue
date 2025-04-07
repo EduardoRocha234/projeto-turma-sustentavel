@@ -29,8 +29,9 @@
 			</button>
 		</div>
 		<div class="xl:flex hidden flex-col items-center gap-6">
-			<img
-				src="../../assets/img/sustainability-image.png"
+			<NuxtImg
+				src="/sustainability-image.webp"
+				alt="Imagem representando a sustentabilidade"
 				class="rounded-full size-[25rem] 2xl:size-[30rem] object-cover shadow-sm"
 			/>
 			<div class="shadow-picture"></div>
