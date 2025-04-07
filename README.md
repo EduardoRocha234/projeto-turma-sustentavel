@@ -55,6 +55,10 @@ Essa funcionalidade garante o controle e a curadoria dos materiais publicados, a
 
 Este projeto foi doado de forma voluntária para a escola, como uma forma de contribuir para a educação e apoiar professores e alunos no desenvolvimento de soluções sustentáveis. A infraestrutura foi montada com **recursos gratuitos**, demonstrando que é possível criar impacto mesmo com baixo orçamento.
 
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
+
 ## 📦 Como Rodar o Projeto Localmente (nescessário váriaveis de ambiente preenchidas)
 
 ```bash
