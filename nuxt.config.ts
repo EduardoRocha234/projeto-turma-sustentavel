@@ -11,8 +11,9 @@ export default defineNuxtConfig({
 	app: {
 		head: {
 			htmlAttrs: {
-				lang: 'pt-BR'
-			}
+				lang: 'pt-BR',
+			},
+			meta: [{name: 'google-site-verification', content: 'TBJ0z-bEYoYBxk9c_cdvpCcpvg6qonFmR57OvfLs2rA'}],
 		},
 	},
 	modules: [
