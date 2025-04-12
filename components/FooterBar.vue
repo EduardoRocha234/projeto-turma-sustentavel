@@ -8,7 +8,7 @@
 		<span class="text-green-800 text-sm md:text-lg mb-6">
 			Desenvolvido com 💚 por
 			<a
-				href="https://eduardorocha.netlify.app/"
+				href="https://eduardoaleixodev.com.br/"
 				target="_blank"
 				class="underline hover:text-green-600"
 				>Eduardo R. Aleixo</a
