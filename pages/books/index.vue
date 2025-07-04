@@ -9,7 +9,7 @@
 		</h2>
 		<div class="flex w-full justify-center md:justify-start">
 			<span class="text-gray-600 text-sm md:text-lg">
-				Clique na turma que você deseja visualizar os livros:</span
+				Selecione a turma da qual deseja visualizar os livros:</span
 			>
 		</div>
 		<div v-if="status === 'pending'">
@@ -94,7 +94,7 @@
 											</div>
 										</InputIcon>
 										<InputText
-											placeholder="Pesquisar aluno"
+											placeholder="Pesquisar aluno..."
 											v-model="search"
 											class="w-full md:w-auto"
 										/>

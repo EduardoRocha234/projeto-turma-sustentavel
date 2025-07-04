@@ -1,7 +1,7 @@
 <template>
 	<div
 		ref="viewer"
-		class="w-full h-screen rounded-md shadow-sm"
+		class="w-full h-[20rem] md:h-screen rounded-md shadow-sm"
 	/>
 </template>
 
@@ -30,13 +30,13 @@ onMounted(() => {
 	}
 })
 
-const goFullscreen = () => {
+const toggleFullScreen = () => {
 	if (instance) {
 		instance.value?.UI.toggleFullScreen()
 	}
 }
 
 defineExpose({
-	goFullscreen,
+	toggleFullScreen,
 })
 </script>

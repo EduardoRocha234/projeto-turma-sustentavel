@@ -1,6 +1,6 @@
 <template>
 	<div class="h-full mt-16 py-10 md:px-[10rem] px-4">
-		<div class="flex w-full justify-between mb-4">
+		<div class="flex w-full justify-between mb-4 bg-white py-2 md:py-4 px-3 rounded-xl border sticky top-[5.5rem] md:static">
 			<div
 				class="flex items-center gap-2 text-green-700 hover:text-green-900 transition-colors cursor-pointer"
 				@click="$router.back()"
@@ -13,19 +13,19 @@
 			</div>
 			<div
 				v-if="status === 'success'"
-				class="flex items-center gap-4"
+				class="flex items-center gap-4 md:gap-4 "
 			>
 				<Icon
 					name="mdi:arrow-expand-all"
 					size="22"
-					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer"
+					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer size-6"
 					title="Vizualizar em tela cheia"
-					@click="pdfViewerRef?.goFullscreen()"
+					@click="pdfViewerRef?.toggleFullScreen()"
 				/>
 				<Icon
 					name="mdi:share-variant-outline"
 					size="22"
-					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer"
+					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer size-6"
 					title="Compartilhar"
 					@click="startShare"
 				/>
@@ -33,14 +33,14 @@
 					v-if="isSupported"
 					name="mdi:qrcode-scan"
 					size="22"
-					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer"
+					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer size-6"
 					title="Gerar QR Code de compartilhamento"
 					@click="qrCodeDialogRef?.toggleModal()"
 				/>
 				<Icon
 					name="mdi:tray-download"
 					size="22"
-					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer"
+					class="text-green-700 hover:text-green-900 transition-colors cursor-pointer size-6"
 					title="Baixar livro"
 					@click="
 						downloadFile(
@@ -63,14 +63,17 @@
 		</div>
 		<template v-else-if="status === 'success'">
 			<div
-				class="flex items-center justify-center bg-green-100 rounded-lg py-3 mb-4 shadow-sm"
+				class="flex items-center justify-center bg-green-100 rounded-lg p-3 mb-4 shadow-sm"
 			>
 				<div class="flex flex-col items-center">
-					<span class="text-xl md:text-3xl font-bold text-green-800">
+					<span
+						class="text-lg md:text-3xl leading-5 text-center font-bold text-green-800"
+					>
 						{{ student?.book_title }}
 					</span>
-					<p class="text-lg text-gray-700 mt-1">
-						por {{ student?.name }} - {{ `${student?.class}º ano` }}
+					<p class="text-sm md:text-lg text-gray-700 mt-1">
+						Por:
+						<span class="font-semibold">{{ student?.name }} - {{ `${student?.class}º ano` }}</span>
 					</p>
 				</div>
 			</div>

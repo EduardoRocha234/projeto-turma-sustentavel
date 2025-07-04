@@ -1,36 +1,27 @@
 <template>
 	<div
-		class="bg-green-100 shadow-md rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 flex flex-col justify-between transition"
+		class="bg-green-100 shadow-md rounded-xl p-6 hover:shadow-lg hover:-translate-y-1 flex flex-col justify-between transition max-h-[15rem]"
 	>
-		<div>
-			<h3 class="text-lg md:text-xl font-semibold text-green-800">
-				{{ student.name }}
-			</h3>
-
-			<p class="md:text-lg text-green-800 mt-2 flex items-center gap-2">
+		<div class="space-y-2 mb-4">
+			<div
+				class="text-xl md:text-xl flex items-center gap-2 font-semibold text-green-800 mb-3 border-b-2 border-green-200 pb-2 truncate"
+			>
 				<Icon
 					name="mdi:book-open-page-variant-outline"
 					size="27"
 					class="text-green-600"
 				/>
-				Título:
-				<span class="font-medium truncate">{{ student.book_title }}</span>
-			</p>
+				{{ student.name }}
+			</div>
 
-			<p class="md:text-lg text-green-800 mt-2 flex items-center gap-2 mb-4">
-				<Icon
-					name="mdi:google-classroom"
-					size="27"
-					class="text-green-600"
-				/>
-				Turma:
-				<span class="font-medium">{{ student.class }}º ano</span>
-			</p>
+			<span class="text-xl text-green-800 font-bold truncate text-wrap">
+				{{ student.book_title }}
+			</span>
 		</div>
 
 		<NuxtLink
 			:to="`/books/${student.id}`"
-			class="rounded-full text-center w-full bg-green-500 text-white px-5 py-2 font-bold hover:bg-green-600 transition-all hover:shadow-lg"
+			class="rounded-xl text-center w-full bg-green-500 text-white px-5 py-2 font-bold hover:bg-green-600 transition-all hover:shadow-lg"
 		>
 			Ler livro
 		</NuxtLink>
