@@ -30,7 +30,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="flex items-center justify-center">
+			<div class="flex items-center justify-center mb-4">
 				<div class="border-2 rounded-lg mb-2">
 					<ClientOnly>
 						<VueQrcode
@@ -42,6 +42,7 @@
 					</ClientOnly>
 				</div>
 			</div>
+			<span class="flex text-xs md:text-sm justify-center text-center">Leia o QR code para acessar o livro 😊</span>
 		</tamplate>
 	</LazyDialog>
 </template>
