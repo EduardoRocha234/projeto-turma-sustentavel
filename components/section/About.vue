@@ -3,7 +3,7 @@
 		id="about"
 		class="flex flex-col items-center py-[5rem] md:py-[10rem]"
 	>
-		<h4 class="text-2xl 2xl:text-4xl text-green-700 font-bold">Sobre o projeto</h4>
+		<h4 class="text-2xl 2xl:text-4xl text-green-700 font-bold">Sobre o Projeto</h4>
 		<div class="max-w-4xl mx-auto px-4 py-12 text-gray-800">
 			<div
 				class="bg-green-100 hover:shadow-md transtion-all duration-300 p-4 rounded-xl shadow-sm mb-4"
